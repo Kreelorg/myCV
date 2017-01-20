@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+html(lang="fr")
+head
+  meta(charset="UTF-8")
+  meta(name="viewport", content="width=device-width, initial-scale=1.0")
+  meta(http-equiv="X-UA-Compatible", content="ie=edge")
+  title Document
+
+  
+link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Arima+Madurai")
+link(rel="stylesheet", href="css/bootstrap.min.css")
+link(rel="stylesheet", href="css/style.css")
+
+
+
+
+body
+  .header.reflex
+    .mypicture
+    .monnom
+      p Marc BORGNA
+      p Intégrateur Web
+    .moncv
+      button(onclick="afficheCV()") Télécharger mon CV (PDF)
+            
+  .code.hide
+    img(src="img/javascript.png")
+    img(src="img/html.png")
+    img(src="img/jade.png")
+    img(src="img/sass.png")
+    img(src="img/angularJs.png")
+    img(src="img/ionic.png")
+    
+  .cv.reflex  
+    .item
+      .contour.actif(style="background-color:#2f2a47")
+        img(src="img/picto/homme.png",data-item="moi")
+      .contour(style="background-color:#6d0019")
+        img(src="img/picto/travail.png",data-item="ecole")
+      .contour(style="background-color:#c1bfea")
+        img(src="img/picto/ecole.png",data-item="experience")
+      .contour(style="background-color:#006e2e")  
+        img(src="img/picto/competence.png",data-item="competence")      
+      .contour(style="background-color:#1e5799",class="shadow")
+        img(src="img/picto/loisir.png",data-item="loisirs")    
+    .detail.shadow
+      .moi
+        .content
+          .titre
+            h2 Qui suis-je ?
+            hr
+          .texte1
+            p je m'appele Marc BORGNA
+            p Je suis né le 30 novembre 1968 à Toulon
+            hr
+            p 33 rue Claire Joie
+            p 83200 Toulon
+            hr
+            p tel : 06.70.92.93.20
+            p mail : marc.borgna@gmail.com
+            p gitHub : 
+            p LinKin
+            hr
+
+      .ecole.hide
+        .titre
+          h2 Mes études
+        .content
+          .logo          
+            img(src="img/cv/tssi.jpg",id="img1",data-texte="texte1",class="logoactif")
+            img(src="img/cv/gea.jpg",id="img2",data-texte="texte2")
+          .texte1
+            .t1
+              p Titre professionnel de niveau III (Bac +2) : TECHNICIEN SUPÉRIEUR EN SUPPORT INFORMATIQUE.
+            .t2
+              p Installer, mettre en service ou dépanner des équipements informatiques (PC, périphériques et logiciels) et numériques (voix, images et données) reliés en réseau, auprès de particuliers ou d’entreprises clientes.
+              p Assister les utilisateurs et les clients sur site ou à distance, afin de résoudre au plus vite leurs incidents et de les aider à travailler au mieux avec leurs outils bureautiques, informatiques et numériques.
+              p Assurer le bon fonctionnement du réseau local et des connexions internet.
+              p Installer, configurer et maintenir les postes de travail et les serveurs.
+              p Apporter une assistance technique aux clients et aux utilisateurs.
+              p Définir une architecture réseau et la mettre en place, tout en appliquant une stratégie de sécurité.
+          .texte2.hide
+            .t1
+              p Diplôme universitaire de Technologie
+              p Option Finances / Comptablilité
+            .t2
+              div Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas culpa dignissimos molestiae facilis, repellendus quia quo consequuntur soluta pariatur fugiat nemo facere doloremque sequi voluptatem ad tempora. Tempora, saepe, ducimus.
+              div Quam sunt deserunt excepturi amet quidem, laborum maxime velit eaque, hic odio adipisci quasi laudantium temporibus corporis? Unde repellat cum cumque neque sunt atque id sit porro eligendi saepe. Ex.
+              div Minus sit incidunt quis tenetur dolorem! Numquam corporis ipsa voluptate quam, suscipit architecto? Aliquid nemo quas modi soluta adipisci unde, ipsam sit tempore nisi perferendis nihil dolore possimus, officiis quos!
+              div Ut laborum, esse consectetur dolorem, expedita repellat, laboriosam sunt cumque libero similique reiciendis excepturi voluptates suscipit quod. Corrupti, rerum, laudantium? Consectetur et error ut fugit adipisci sunt tempora voluptate quas!
+      .experience.hide
+        .titre
+          h2 Mon expérience
+          
+          .content
+            table.table.table-bordered
+              tr.hide
+                td(width='15%')  entreprises
+                td(width='15%') année
+                td(width='70%') commentaire
+              tr
+                td(style='background-color:white')
+                  img(src="img/xp/fnac.jpg", alt="")
+                td
+                  p Toulon
+                  p de 1990 à 2017
+                  hr
+                  p 27 ans
+                td
+                  ul
+                    li Vendeur informatique
+                    li 5 ans : technicien en Clinique informatique  (Réparation et entretien des PCs des clients)
+                    li Création d'un logiciel d'inventaire que le FNAC à utiliser pendant plusieurs années (Turbo Pascal)
+                    
+              tr    
+                td(style='background-color:white')
+                  img(src="img/xp/chits.png", alt="")
+                td
+                  p Toulon
+                  p 2011
+                  hr
+                  p 6 mois
+                td
+                  ul
+                    li à l'issue de ma Formation TSSI, dans la continuité de ma stage, l'hopital de Toulon m'a embauché comme technicien Supérieur Hostpiatlier afin de participer à la migration des postes de travail vers le nouvel établissement (Sainte Musse)
+                    li j'ai effectué au sein du  service GPI (Gestion du Parc informatique) la préparation des postes de travail (image Windows ) à partir d'un service de déploiement Linux
+                    
+              tr
+                td(style='background-color:white')
+                  img(src="img/xp/cma.jpg", alt="")
+                td
+                  p Marseille
+                  p oct et nov 2011
+                  hr
+                  p 2 mois
+                td
+                  ul
+                    li J'ai travaillé 2 mois comme pupitreur à la CMA-CGM, société multinationale de transport martime située à Marseille.
+                    li Le service de la journée répondait aux problématique utilisateur (niveau 2 ITIL) ainsi qu'à l'éxecution des requetes bases de données que nous demandaient les administrateurs BdD à Dubaï
+                    li la nuit, j'étais affecté à la surveillance des differents réseaux et batch de nuit 
+                                        
+      .competence.hide
+        .titre
+          h2 Mes compétences
+
+        .content
+          .card.CLRblanckD
+             h3 Bureautique
+             img(src="img/logiciels/excel.png", alt="",class="log")
+             img(src="img/logiciels/word.png", alt="",class="log")
+             img(src="img/logiciels/pwp.png", alt="",class="log")
+          .card.CLRblanckD
+             h3 Technologie Front-end 
+             img(src="img/logiciels/html.png", alt="",class="log")
+             img(src="img/logiciels/css.png", alt="",class="log")
+             img(src="img/logiciels/javascript.jpg", alt="",class="log")
+             img(src="img/logiciels/angularJs.png", alt="",class="log")
+             img(src="img/logiciels/ionic.png", alt="",class="log")
+          .card.CLRblanckD
+               h3 Technologie Back-end 
+               img(src="img/logiciels/laravel.png", alt="",class="log")
+               img(src="img/logiciels/php.png", alt="",class="log")
+               img(src="img/logiciels/msql.png", alt="",class="log")
+           .card.CLRblanckD
+               h3 Graphique & design  
+               img(src="img/logiciels/ps.jpg", alt="",class="log")
+               img(src="img/logiciels/lr.jpg", alt="",class="log")
+                  
+                
+      .loisirs.hide
+        .titre
+          h2 Mes Loisirs 
+
+        .content
+          .im
+            p cinéma
+            img(src="img/loisirs/cinema.jpg", alt="",class="lois")
+            p S.F / policier / Heroic fantasy
+          .im  
+            p lecture
+            img(src="img/loisirs/lecture.jpg", alt="",class="lois")
+            p polar / S.F.
+          .im
+            p nouvelles technologies
+            img(src="img/loisirs/nt.png", alt="",class="lois")
+            p micro / jeux / developpement
+          .im  
+            p sport
+            img(src="img/loisirs/sports.png", alt="",class="lois")
+            p cyclisme / footing
+              
+    
+  .stylo.reflex
+    .ecrit
+      p Ce site est juste une démonstration de parallax.
+      p il mèle des fonctions jQuery, du ccs3 et du HTML5
+      
+    .logo  
+    button(onclick="ouvre1()") Accéder au site
+
+  .tennis.reflex
+    .ecrit
+      p J'ai concu ce site pour me familiariser avec AngularJS et son gestionnaire de template Blade.  Les bases de données sont gérées en MySql .
+      p Le site est loin d'être finalisé, et n'est pas du tout responsive.... Il avait juste pour but de m'attaquer à un projet plus important sans d'autre prétention que de découvrir de nouvelles technologies
+      p C'est un site de réservation de courts de tennis en ligne
+      p gael@test.fr Mdp : 0000    Accés joueur membre
+      p max@test.fr Mdp : 0000    Accés administrateur
+    .tennisLogo        
+    button(onclick="ouvre2()") Accéder au site
+  .env        
+            
+script(src="js/jquery-3.1.1.min.js")
+script(src="js/function.js")
+  
