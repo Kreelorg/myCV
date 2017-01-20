@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr"></html>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <title>Document</title>
+</head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arima+Madurai"/>
+<link rel="stylesheet" href="css/bootstrap.min.css"/>
+<link rel="stylesheet" href="css/style.css"/>
+<body>
+  <div class="header reflex">
+    <div class="mypicture"></div>
+    <div class="monnom">
+      <p>Marc BORGNA</p>
+      <p>Intégrateur Web</p>
+    </div>
+    <div class="moncv">
+      <button onclick="afficheCV()">Télécharger mon CV (PDF)</button>
+    </div>
+  </div>
+  <div class="code hide"><img src="img/javascript.png"/><img src="img/html.png"/><img src="img/jade.png"/><img src="img/sass.png"/><img src="img/angularJs.png"/><img src="img/ionic.png"/></div>
+  <div class="cv reflex"> 
+    <div class="item">
+      <div style="background-color:#2f2a47" class="contour actif"><img src="img/picto/homme.png" data-item="moi"/></div>
+      <div style="background-color:#6d0019" class="contour"><img src="img/picto/travail.png" data-item="ecole"/></div>
+      <div style="background-color:#c1bfea" class="contour"><img src="img/picto/ecole.png" data-item="experience"/></div>
+      <div style="background-color:#006e2e" class="contour"> <img src="img/picto/competence.png" data-item="competence"/></div>
+      <div style="background-color:#1e5799" class="contour shadow"><img src="img/picto/loisir.png" data-item="loisirs"/></div>
+    </div>
+    <div class="detail shadow">
+      <div class="moi">
+        <div class="content">
+          <div class="titre">
+            <h2>Qui suis-je ?</h2>
+            <hr/>
+          </div>
+          <div class="texte1">
+            <p>je m'appele Marc BORGNA</p>
+            <p>Je suis né le 30 novembre 1968 à Toulon</p>
+            <hr/>
+            <p>33 rue Claire Joie</p>
+            <p>83200 Toulon</p>
+            <hr/>
+            <p>tel : 06.70.92.93.20</p>
+            <p>mail : marc.borgna@gmail.com</p>
+            <p>gitHub : </p>
+            <p>LinKin</p>
+            <hr/>
+          </div>
+        </div>
+      </div>
+      <div class="ecole hide">
+        <div class="titre">
+          <h2>Mes études</h2>
+        </div>
+        <div class="content">
+          <div class="logo">         <img src="img/cv/tssi.jpg" id="img1" data-texte="texte1" class="logoactif"/><img src="img/cv/gea.jpg" id="img2" data-texte="texte2"/></div>
+          <div class="texte1">
+            <div class="t1">
+              <p>Titre professionnel de niveau III (Bac +2) : TECHNICIEN SUPÉRIEUR EN SUPPORT INFORMATIQUE.</p>
+            </div>
+            <div class="t2">
+              <p>Installer, mettre en service ou dépanner des équipements informatiques (PC, périphériques et logiciels) et numériques (voix, images et données) reliés en réseau, auprès de particuliers ou d’entreprises clientes.</p>
+              <p>Assister les utilisateurs et les clients sur site ou à distance, afin de résoudre au plus vite leurs incidents et de les aider à travailler au mieux avec leurs outils bureautiques, informatiques et numériques.</p>
+              <p>Assurer le bon fonctionnement du réseau local et des connexions internet.</p>
+              <p>Installer, configurer et maintenir les postes de travail et les serveurs.</p>
+              <p>Apporter une assistance technique aux clients et aux utilisateurs.</p>
+              <p>Définir une architecture réseau et la mettre en place, tout en appliquant une stratégie de sécurité.</p>
+            </div>
+          </div>
+          <div class="texte2 hide">
+            <div class="t1">
+              <p>Diplôme universitaire de Technologie</p>
+              <p>Option Finances / Comptablilité</p>
+            </div>
+            <div class="t2">
+              <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas culpa dignissimos molestiae facilis, repellendus quia quo consequuntur soluta pariatur fugiat nemo facere doloremque sequi voluptatem ad tempora. Tempora, saepe, ducimus.</div>
+              <div>Quam sunt deserunt excepturi amet quidem, laborum maxime velit eaque, hic odio adipisci quasi laudantium temporibus corporis? Unde repellat cum cumque neque sunt atque id sit porro eligendi saepe. Ex.</div>
+              <div>Minus sit incidunt quis tenetur dolorem! Numquam corporis ipsa voluptate quam, suscipit architecto? Aliquid nemo quas modi soluta adipisci unde, ipsam sit tempore nisi perferendis nihil dolore possimus, officiis quos!</div>
+              <div>Ut laborum, esse consectetur dolorem, expedita repellat, laboriosam sunt cumque libero similique reiciendis excepturi voluptates suscipit quod. Corrupti, rerum, laudantium? Consectetur et error ut fugit adipisci sunt tempora voluptate quas!</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="experience hide">
+        <div class="titre">
+          <h2>Mon expérience</h2>
+          <div class="content">
+            <table class="table table-bordered">
+              <tr class="hide">
+                <td width="15%"> entreprises</td>
+                <td width="15%">année</td>
+                <td width="70%">commentaire</td>
+              </tr>
+              <tr>
+                <td style="background-color:white"><img src="img/xp/fnac.jpg" alt=""/></td>
+                <td>
+                  <p>Toulon</p>
+                  <p>de 1990 à 2017</p>
+                  <hr/>
+                  <p>27 ans</p>
+                </td>
+                <td>
+                  <ul>
+                    <li>Vendeur informatique</li>
+                    <li>5 ans : technicien en Clinique informatique  (Réparation et entretien des PCs des clients)</li>
+                    <li>Création d'un logiciel d'inventaire que le FNAC à utiliser pendant plusieurs années (Turbo Pascal)</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>   
+                <td style="background-color:white"><img src="img/xp/chits.png" alt=""/></td>
+                <td>
+                  <p>Toulon</p>
+                  <p>2011</p>
+                  <hr/>
+                  <p>6 mois</p>
+                </td>
+                <td>
+                  <ul>
+                    <li>à l'issue de ma Formation TSSI, dans la continuité de ma stage, l'hopital de Toulon m'a embauché comme technicien Supérieur Hostpiatlier afin de participer à la migration des postes de travail vers le nouvel établissement (Sainte Musse)</li>
+                    <li>j'ai effectué au sein du  service GPI (Gestion du Parc informatique) la préparation des postes de travail (image Windows ) à partir d'un service de déploiement Linux</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td style="background-color:white"><img src="img/xp/cma.jpg" alt=""/></td>
+                <td>
+                  <p>Marseille</p>
+                  <p>oct et nov 2011</p>
+                  <hr/>
+                  <p>2 mois</p>
+                </td>
+                <td>
+                  <ul>
+                    <li>J'ai travaillé 2 mois comme pupitreur à la CMA-CGM, société multinationale de transport martime située à Marseille.</li>
+                    <li>Le service de la journée répondait aux problématique utilisateur (niveau 2 ITIL) ainsi qu'à l'éxecution des requetes bases de données que nous demandaient les administrateurs BdD à Dubaï</li>
+                    <li>la nuit, j'étais affecté à la surveillance des differents réseaux et batch de nuit </li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="competence hide">
+        <div class="titre">
+          <h2>Mes compétences</h2>
+        </div>
+        <div class="content">
+          <div class="card CLRblanckD">
+            <h3>Bureautique</h3><img src="img/logiciels/excel.png" alt="" class="log"/><img src="img/logiciels/word.png" alt="" class="log"/><img src="img/logiciels/pwp.png" alt="" class="log"/>
+          </div>
+          <div class="card CLRblanckD">
+            <h3>Technologie Front-end </h3><img src="img/logiciels/html.png" alt="" class="log"/><img src="img/logiciels/css.png" alt="" class="log"/><img src="img/logiciels/javascript.jpg" alt="" class="log"/><img src="img/logiciels/angularJs.png" alt="" class="log"/><img src="img/logiciels/ionic.png" alt="" class="log"/>
+          </div>
+          <div class="card CLRblanckD">
+            <h3>Technologie Back-end </h3><img src="img/logiciels/laravel.png" alt="" class="log"/><img src="img/logiciels/php.png" alt="" class="log"/><img src="img/logiciels/msql.png" alt="" class="log"/>
+          </div>
+          <div class="card CLRblanckD">
+            <h3>Graphique & design  </h3><img src="img/logiciels/ps.jpg" alt="" class="log"/><img src="img/logiciels/lr.jpg" alt="" class="log"/>
+          </div>
+        </div>
+      </div>
+      <div class="loisirs hide">
+        <div class="titre">
+          <h2>Mes Loisirs </h2>
+        </div>
+        <div class="content">
+          <div class="im">
+            <p>cinéma</p><img src="img/loisirs/cinema.jpg" alt="" class="lois"/>
+            <p>S.F / policier / Heroic fantasy</p>
+          </div>
+          <div class="im"> 
+            <p>lecture</p><img src="img/loisirs/lecture.jpg" alt="" class="lois"/>
+            <p>polar / S.F.</p>
+          </div>
+          <div class="im">
+            <p>nouvelles technologies</p><img src="img/loisirs/nt.png" alt="" class="lois"/>
+            <p>micro / jeux / developpement</p>
+          </div>
+          <div class="im"> 
+            <p>sport</p><img src="img/loisirs/sports.png" alt="" class="lois"/>
+            <p>cyclisme / footing</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="stylo reflex">
+    <div class="ecrit">
+      <p>Ce site est juste une démonstration de parallax.</p>
+      <p>il mèle des fonctions jQuery, du ccs3 et du HTML5</p>
+    </div>
+    <div class="logo"> </div>
+    <button onclick="ouvre1()">Accéder au site</button>
+  </div>
+  <div class="tennis reflex">
+    <div class="ecrit">
+      <p>J'ai concu ce site pour me familiariser avec AngularJS et son gestionnaire de template Blade.  Les bases de données sont gérées en MySql .</p>
+      <p>Le site est loin d'être finalisé, et n'est pas du tout responsive.... Il avait juste pour but de m'attaquer à un projet plus important sans d'autre prétention que de découvrir de nouvelles technologies</p>
+      <p>C'est un site de réservation de courts de tennis en ligne</p>
+      <p>gael@test.fr Mdp : 0000    Accés joueur membre</p>
+      <p>max@test.fr Mdp : 0000    Accés administrateur</p>
+    </div>
+    <div class="tennisLogo">       </div>
+    <button onclick="ouvre2()">Accéder au site</button>
+  </div>
+  <div class="env">       </div>
+</body>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/function.js"></script>
